@@ -20,7 +20,8 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // disable default auth routes
+        Fortify::IgnoreRoutes();
     }
 
     /**
